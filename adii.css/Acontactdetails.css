@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+
+.container {
+    position: relative;
+    width: 100%;
+    /* height: 2000%; */
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #696873;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+
+
+main {
+    width: 1000px;
+    margin: 30px auto;
+}
+
+main h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+main h1 span {
+    font-size: 20px;
+}
+
+table.masterlist {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.masterlist th{
+    background: rgb(36, 31, 31);
+    text-align: left;
+}
+
+table.masterlist th, table.masterlist td {
+    padding: 10px;
+    border-bottom: 1px solid rgb(36, 31, 31);
+}
+

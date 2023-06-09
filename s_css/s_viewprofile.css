@@ -1,0 +1,88 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Create two columns that floats next to each other */
+   .column1 {
+    flex: 1;
+    float: left;
+    width: 15%;
+    padding: 20px;
+    height: 300px; 
+  }
+  
+  .column2 {
+    flex: 1;
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 300px; 
+  }
+   /* Clear floats before the columns */
+   .row:before {
+    content: "";
+    display: table;
+    clear: both;  
+  } */
+
+  /* Clear floats after the columns */
+   .row:after {
+    content: "";
+    display: table;
+    clear: both;  
+  } */
+
+  .img1{
+      height: 400px;
+      padding-top:-50px;
+      padding-bottom:-50px;	
+  } */
+
+  .card1{
+       padding-left:20%;
+       display:flex;
+  } */
+
+   .h31{
+    color: #800000;
+  } 
+
+ 
+
+input {
+    float:left;
+    color: black;
+} 
+  
+
+.card1 {
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  margin: 5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  border-radius: 8px;
+  padding: auto 15px;
+  height: 15rem;
+  color: #1f242d;
+}
+
+
+.column2  {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 5px 15px;
+}

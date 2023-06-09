@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  height: 400px; 
+  margin-right: -10px;
+}
+.input1{
+ border-radius:5px;
+ padding:15px;
+ height:10px;
+}
+
+.h1h2{
+  color: black;
+}
+
+label{
+  color: black;
+}
+
+
+.button{
+    background-color:#E6E6FA;
+    padding: 10px 16px;
+    transition: all .45s ease;
+    border-radius: 5px;
+    top:-780px;
+  }
+
+  .button:hover {
+    background-color:#800080;
+  }
+
+.center {
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding-left:40%; 
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 400px; 
+  margin-right: -10px;
+
+}
+.row:before {
+  content: "";
+  display: table;
+  clear: both;
+   
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+   
+}
+
+
+.img1{
+  max-width: 100%; /* Limit the maximum width of the image to fit within the column */
+  max-height: 100%; /* Limit the maximum height of the image to fit within the column */
+  width: auto; /* Reset the width to auto to maintain aspect ratio */
+  height: auto; /* Reset the height to auto to maintain aspect ratio */
+	  
+}
+
+.card1{
+	 padding-left:15%;
+   padding-right:10%;
+   padding-top: 3%;
+}
