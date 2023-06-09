@@ -1,3 +1,9 @@
+<?php
+    include "connectionRamindu.php";
+    session_start();
+    $UserID = $_SESSION['uID'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +23,7 @@
         <!-- navigation bar-->
         <nav>
             <div class="pic">
-                <img src="./download.png" alt="logo" width="32px" height="32px">
+                <img src="images/logo & footer image/download.png" alt="logo" width="32px" height="32px">
                 <h1 class="logo">WILD<span>TREK</span></h1>
             </div>
 
@@ -37,7 +43,7 @@
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="./ourteam.html" target="_blank">Meet our team</a></li>
                 <li><a href="#">About Us</a></li>
-                <li class="sign"><a href="#">HI User <i class="fa-solid fa-user"></i></a></li>
+                <li class="sign"><a href="#">Hi, <?php echo $_SESSION['userName']; ?> <i class="fa-solid fa-user"></i></a></li>
             </ul>
         </nav>
     </header>

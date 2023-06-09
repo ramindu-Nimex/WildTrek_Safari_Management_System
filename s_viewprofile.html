@@ -11,11 +11,9 @@ $UserID = $_SESSION['uID'];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation and footer</title>
-    <link rel="stylesheet" href="s_css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="s_css/s_home2.css">
     <link rel="stylesheet" href="s_css/s_viewprofile.css">
     <script src = "s_js/s_delete.js"></script>
 
@@ -53,67 +51,63 @@ $UserID = $_SESSION['uID'];
             </ul>
         </nav>
     </header>
-        <br> <br> <br> <br> <br> <br> 
 
-    <br> <br> <br> <br> <br> <br>
-
-        <div class = "card1">
-<div class="row">
-  <div class="column1"style="background-color:#B0C4DE;">
-  <?php $name = $_SESSION['userName'] ?>
-  <center>
-  <div class = "h31">
+    <!-- view profile -->
+<div class="profile">
+    <?php $name = $_SESSION['userName'] ?>
+    <center>
+    <div class = "h31">
         <h3>Welcome, <?php echo $name?>!!</h3>
-            </div>
-</center>
-<?php
-            readData();
+    </div>
+    </center>
+
+    <!-- <?php
+        readData();
 	
-	function readData(){
-		global $conn;
-		$UserID = $_SESSION['uID'];
-        $name = $_SESSION['userName'];
-        echo "$UserID";
-		$sql = "SELECT fullName,userName,email,password,cType,gender,nicPass,contactNo FROM users WHERE userName = '$name'";
-		$result = $conn->query($sql);
+        function readData(){
+		    global $conn;
+		    $UserID = $_SESSION['uID'];
+            $name = $_SESSION['userName'];
+            echo "$UserID";
+		    $sql = "SELECT fullName,userName,email,password,cType,gender,nicPass,contactNo FROM users WHERE userName = '$name'";
+		    $result = $conn->query($sql);
 		
-	if($result->num_rows > 0){
-            while($row = $result->fetch_assoc())
-		{
-		echo "<span>
-					<label>Full Name:  ".$row["fullName"]."  </label><br><br>
-					<label>user Name:  ".$row["userName"]." </label><br><br>
-                    <label>Email Address:  ".$row["email"]." </label><br><br>
-                    <label>citizen Type:"  .$row["cType"]."  </label><br><br>
-                    <label>Gender:".$row["gender"]."  </label><br><br>
-                    <label>NIC/Passport No:".$row["nicPass"]."  </label><br><br>
-                    <label>contact No:".$row["contactNo"]." </label><br><br>
-                
-						<a href='s_profileEdit.php?ID=$row[userName]'> <input class='button bttn' type='submit' name='update' value='Update'> </a> 
-						<a href='s_deleteProfile.php?ID=$row[userName]'> <input class='button bttn' type='submit' name='delete' value='Delete' onclick='myFunction()'> </a>	 
-				
-			</span>";
-		}	
-	}
-	else{
-		echo "No results";
-	}
-	$conn->close();
-	} 
-?>
- </div>
+	        if($result->num_rows > 0){
+                while($row = $result->fetch_assoc()) -->
+		        <!-- {
 
-<div class="column2">
-<img class = "img1" >
+		        echo "<span> -->
+                    <div class="information">
+                        <div class="info">
+                            <div class="info1">
+					            <label>Full Name:  ".$row["fullName"]."  </label><br><br>
+					            <label>user Name:  ".$row["userName"]." </label><br><br>
+                                <label>Email Address:  ".$row["email"]." </label><br><br>
+                                <label>citizen Type:"  .$row["cType"]."  </label><br><br>
+                                <label>Gender:".$row["gender"]."  </label><br><br>
+                                <label>NIC/Passport No:".$row["nicPass"]."  </label><br><br>
+                                <label>contact No:".$row["contactNo"]." </label><br><br>
+                            </div>
+                            <div class="info2">
+					            <a href='s_profileEdit.php?ID=$row[userName]'> <input class='button bttn1' type='submit' name='update' value='Update'> </a> 
+					            <a href='s_deleteProfile.php?ID=$row[userName]'> <input class='button bttn2' type='submit' name='delete' value='Delete' onclick='myFunction()'> </a>	
+                            </div>
+                        </div>
+                        <div class="imageprofile">
+                            <img src="./s_images/profilephoto.jpg" alt="profile" width="350px" height="350px">
+                        </div>
+                    </div>
+			    <!-- </span>";
+		        }	
+            }
+	        else{
+		        echo "No results";
+	        }
+	        $conn->close();
+	    } 
+    ?> -->
+
 </div>
-</div>
-</div>
-
-    <br> <br> <br> <br> <br> <br>
-    
-
-    <br> <br> <br> <br> <br> <br>
-
    
    
     <!--Footer-->

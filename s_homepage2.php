@@ -1,9 +1,8 @@
-<?php
-
+<!-- <?php
 include "connectionRamindu.php";;
 session_start();
 $UserID = $_SESSION['uID'];
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -45,7 +44,8 @@ $UserID = $_SESSION['uID'];
               <li><a href="#">Contact Us</a></li>
               <li><a href="./ourteam.html" target="_blank">Meet our team</a></li>
               <li><a href="#">About Us</a></li>
-              <li class="sign"><a href="./s_viewprofile.php">Hi, <?php echo $_SESSION['userName']; ?></a></li>
+              <!-- <?php echo $_SESSION['userName']; ?> -->
+              <li class="sign"><a href="./s_viewprofile.php">Hi user</a></li>
               <li class="sign"><a href="./s_RegisterForm.html"><i class="fa-solid fa-user-plus"></i> Logout</a></li>
           </ul>
       </nav>

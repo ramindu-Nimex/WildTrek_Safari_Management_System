@@ -1,3 +1,9 @@
+<?php
+    include "connectionRamindu.php";
+    session_start();
+    $UserID = $_SESSION['uID'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +43,7 @@
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="./ourteam.html" target="_blank">Meet our team</a></li>
                 <li><a href="#">About Us</a></li>
-                <li class="sign"><a href="#">HI User <i class="fa-solid fa-user"></i></a></li>
+                <li class="sign"><a href="#">Hi, <?php echo $_SESSION['userName']; ?> <i class="fa-solid fa-user"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -81,7 +87,7 @@
 
                <div class="list">
                   <h2>Location</h2>
-                  <p><?php echo $row["location"]; ?></p>
+                  <p><?php echo $row["loacation"]; ?></p>
                </div>
 
                <div class="list">

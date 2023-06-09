@@ -1,4 +1,10 @@
 <?php
+   include "connectionRamindu.php";
+   session_start();
+   $UserID = $_SESSION['uID'];
+?>
+
+<?php
    include 'connectionRamindu.php';
 
    if(isset($_POST['create'])) {
@@ -14,7 +20,8 @@
       $duration = $_POST['duration']; 
       $request = $_POST['request'];
 
-      $sql = "INSERT INTO jeepreservation(name, phone, email, date, country,loacation,package,Participants,tourguide,duration,request) VALUES('$name','$phone','$email','$date','$country','$location','$package','$Participants','$tourguide','$duration','$request')";
+      $uname = $_SESSION['userName'];  
+      $sql = "INSERT INTO jeepreservation(name, phone, email, date, country,loacation,package,Participants,tourguide,duration,request,userName) VALUES('$name','$phone','$email','$date','$country','$location','$package','$Participants','$tourguide','$duration','$request','$uname')";
 
       $result = mysqli_query($conn,$sql);
 
@@ -39,6 +46,8 @@
       $tourguide = $_POST['tourguide'];
       $duration = $_POST['duration'];
       $request = $_POST['request'];
+
+      $name = $_SESSION['userName'];
 
       $sql = "UPDATE jeepreservation SET name = '$name', phone = '$phone', email = '$email', date = '$date', country = '$country', loacation = '$location', package = '$package' , Participants = '$Participants', tourguide = '$tourguide' , duration = '$duration', request = '$request' WHERE id='$id'";
 

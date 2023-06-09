@@ -51,7 +51,7 @@
 
          <div class="list">
             <h2>Location</h2>
-            <p>'.$row['location'].'</p>
+            <p>'.$row['loacation'].'</p>
          </div>
 
          <div class="list">

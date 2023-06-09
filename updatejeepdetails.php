@@ -1,4 +1,10 @@
 <?php
+    include "connectionRamindu.php";
+    session_start();
+    $UserID = $_SESSION['uID'];
+?>
+
+<?php
    include "connectionRamindu.php";
    $id = $_GET['id'];
    $sql = "SELECT * FROM jeepreservation WHERE id=$id";
@@ -45,7 +51,7 @@
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="./ourteam.html" target="_blank">Meet our team</a></li>
                 <li><a href="#">About Us</a></li>
-                <li class="sign"><a href="#">HI User <i class="fa-solid fa-user"></i></a></li>
+                <li class="sign"><a href="#">Hi, <?php echo $_SESSION['userName']; ?> <i class="fa-solid fa-user"></i></a></li>
             </ul>
         </nav>
    </header>
