@@ -47,71 +47,73 @@
     <br> <br> <br> <br> <br> <br> 
     <div class = "card1">
         <div class="row">
-          <div class="column1" style="background-color:#F0F8FF;">
-        <form method="POST" action="s_signup.php">
+            <div class="column1">
+                <form method="POST" action="s_signup.php" class="form">
         
-        <div class = "h1h2">
-            <h1>Sign Up</h1><br>
-            <h2>Begin Your Adventure</h2><br>
-        </div> 
+                    <div class = "h1h2">
+                        <h1>Sign Up</h1><br>
+                        <h2>Begin Your Adventure</h2><br>
+                    </div> 
+                    
+                    <div class="input1">
+                        <label for="Full name: "><b>Full Name : </b></label><br>
+                        <input name="fullName" placeholder="Enter full name"size ="50"; required>
+                    </div>
+
+                    <div class="input1">
+                        <label for = "UserName"><b>UserName :</b></label><br>
+                        <input type = "text" name="userName" placeholder="Enter userName "  size ="50" required>
+                    </div>
+
+                    <div class="input1">
+                        <label for ="Email"><b>Email :</b></label><br>
+                        <input type = "text"  name = "email"  placeholder = "Enter email"size ="50" required>
+                    </div>
+                    
+                    <div class="input1">
+                        <label for ="Password"><b>Password :</b></label><br>
+                        <input type = "password" name = "password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  placeholder = "Enter password" size ="50"required>
+                    </div>
+
+                    <div class="input1">
+                        <label for="citizens"><b>citzen Type :</b></label><br>
+                        <select name="citizens" id="citizens"><br><br>
+                            <option id="citizens" value="local">Local</option>
+                            <option id="citizens" value="foreign">Foreign</option>
+                        </select required>
+                    </div>
                 
-             <label for="Full name: "><b>Full Name : </b></label><br>
-            <input class = "input1" type = "text" name="fullName" placeholder="Enter full name"size ="50"; required><br><br>
-        
-            <label for = "UserName"><b>UserName :</b></label><br>
-            <input class = "input1" type = "text" name="userName" placeholder="Enter userName "  size ="50" required><br><br>
-        
-            <label for ="Email"><b>Email :</b></label><br>
-            <input class = "input1" type = "text"  name = "email"  placeholder = "Enter email"size ="50" required><br><br>
-        
-            <label for ="Password"><b>Password :</b></label><br>
-            <input class = "input1" type = "password" name = "password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  placeholder = "Enter password" size ="50"required><br><br>
 
-            <div class="row2">
-                <div class="column5">
-            <label for="citizens"><b>citzen Type :</b></label><br>
-            <select name="citizens" id="citizens"><br><br>
-                <option id="citizens" value="local">Local</option>
-                <option id="citizens" value="foreign">Foreign</option>
-              </select required>
-              </select>
-               </div>
-              <br><br>
-            <div class="column6">
-            <label for ="gender"><b>Gender :</b></label><br>
-            <label for ="gender"><b>Male</b></label>
-            <input class = "input1" type = "radio" name = "gender" value="Male" size ="50">
-        
-            <label for ="gender"><b>Female</b></label>
-            <input class = "input1" type = "radio" name = "gender" value="Female" size ="50"><br><br>
-            </div>
-           </div>
+                    <div class="radio1">
+                        <label for ="gender"><b>Gender :</b></label><br>
 
-            <div class="row1">
-                <div class="column3">
-                    <label for ="NICpass"><b>NIC/Passport No:</b></label><br>
-                    <input class = "input2" type = "text"  name = "nic" placeholder = "Enter NIC" size ="15" required><br><br>
-                  </div>
-                  <div class="column4">
-                    <label for ="Contactno"><b>Contact No :</b></label><br>
-                    <input class = "input2" type = "text"  name = "contact" placeholder = "Enter contact no" size ="15" required><br><br>
-                  </div>
-            </div>
-             <div>
-                <button type = "submit" name="submit" class="button1" size="50"><a href="s_signup.php">Sign Up</a></button>
-                 </div> 
-        </form>
-      
-          </div>
-       
-          <div class="img1">
-          <img src = "s_images/wild88.jpg" width="550px" height="700px">
-          </div>
-        </div>
-        </div>
+                        <label for ="gender"><b>Male</b></label>
+                        <input type = "radio" name = "gender" value="Male" size ="50">
         
-          
-        <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br> <br><br> <br><br> <br>
+                        <label for ="gender"><b>Female</b></label>
+                        <input type = "radio" name = "gender" value="Female" size ="50">
+                    </div>
+
+                    <div class="input1">
+                        <label for ="NICpass"><b>NIC/Passport No:</b></label><br>
+                        <input type = "text"  name = "nic" placeholder = "Enter NIC" size ="15" required>
+                    </div>
+
+                    <div class="input1">
+                        <label for ="Contactno"><b>Contact No :</b></label><br>
+                        <input type = "text"  name = "contact" placeholder = "Enter contact no" size ="15" required>
+                    </div>
+
+                    <div class="input1">
+                        <button type = "submit" name="submit"  size="50"><a href="s_signup.php">Sign Up</a></button>
+                    </div> 
+                </form>
+                <div class="img1">
+                    <img src = "s_images/wild88.jpg" width="550px" height="880px">
+                </div>
+            </div>
+        </div>
+    </div>
         
 
    <!--Footer-->

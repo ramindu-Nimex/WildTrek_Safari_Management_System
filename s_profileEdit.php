@@ -54,7 +54,7 @@ $UserID = $_SESSION['uID'];
     <br> <br> <br> <br> <br> <br>
 
 <?php
-    include_once("s_config.php");
+    include_once("connectionRamindu.php");
 
 if (isset($_POST['btn2'])) {
     $name = $_SESSION['userName'];

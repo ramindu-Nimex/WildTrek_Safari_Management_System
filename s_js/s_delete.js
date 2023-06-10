@@ -1,9 +1,7 @@
-function myFunction() {
-    var txt;
-    if (confirm("Are you sure?Do You want to DELETE?")) {
-      txt = "You pressed OK!";
-    } else {
-      txt = "You pressed Cancel!";
+function confirmDelete() {
+    var txt = "Are you sure?Do You want to DELETE?";
+    if(!txt) {
+      return false;
     }
-    document.getElementById("demo").innerHTML = txt;
   }
+  

@@ -44,7 +44,7 @@
       $duration = $_POST['duration'];
       $request = $_POST['request'];
 
-      $name = $_SESSION['userName'];
+      $uname = $_SESSION['userName'];
 
       $sql = "UPDATE campreservation SET name = '$name', phone = '$phone', email = '$email', date = '$date', location = '$location', package = '$package' , Participants = '$Participants', duration = '$duration', request = '$request' WHERE id='$id'";
 

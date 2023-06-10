@@ -159,14 +159,83 @@ header.sticky{
     border-bottom: 1px solid #ffffff1a;
 }
 
+/* FORM */
+
 .column1 {
-  float: left;
-  width: 40%;
-  padding: 20px;
-  height: 700px; 
-  margin-right: -10px;
+  display: flex;
+  align-items: center;
+  flex-basis: 50%;
+  justify-content: space-around;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 1rem ;
 }
-.input1{
+
+.form {
+  position: relative;
+   /* max-width: 800px; */
+   width: 40%;
+   margin-left: 15%;
+   padding: 25px;
+   font-size: 20px;
+   letter-spacing: 2px;
+   background-color: #fff;
+   color: #282d33;
+   border-radius: 8px;
+   box-shadow: 0 0 15px #1f242d;
+}
+
+.img1 {
+  margin-right: 15%;
+  border-radius: 8px;
+  overflow-x: hidden;
+}
+
+.form .input1 {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form .input1 input,
+.form .input1 select {
+  position: relative;
+   height: 30px;
+   width: 100%;
+   outline: none;
+   font-size: 1rem;
+   color: #282d33;
+   margin-top: 8px;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   padding: 0 15px;
+}
+
+.form .radio1 {
+  margin-top: 8px;
+}
+
+.form button {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  margin-top: 8px;
+  border-radius: 6px;
+  letter-spacing: 2px;
+  background: #1f242d;
+  border: none;
+  transition: all .45s ease;
+}
+
+.form button:hover {
+  transform: scale(0.9);
+  background: #282d33;
+}
+
+.form button a {
+  color: #a7a0a0;
+}
+
+/* .input1{
  border-radius:5px;
  padding:15px;
  height:10px;
@@ -178,23 +247,24 @@ header.sticky{
 
 label{
   color: black;
-}
+} */
 
-
+/* 
 .button{
   background-color:#E6E6FA;
   padding: 10px 16px;
   transition: all .45s ease;
-  border-radius: 5px;
-  /* top:-780px; */
-}
+  border-radius: 5px; */
+  /* top:-780px; 
+} /*
 
-.button:hover {
+
+/* .button:hover {
   background-color:#800080;
-}
+} */
 
 
-.center1 {
+/* .center1 {
 justify-content: center;
 align-items: center;
 height: 200px;
@@ -213,26 +283,26 @@ padding-left:40%;
   content: "";
   display: table;
   clear: both;
-   
-}
+}*/
+
 /* Clear floats after the columns */
-.row:after {
+/* .row:after {
   content: "";
   display: table;
   clear: both;
    
-}
+} */
 
 
-.img1{
-  max-width: 100%; /* Limit the maximum width of the image to fit within the column */
-  max-height: 100%; /* Limit the maximum height of the image to fit within the column */
-  width: auto; /* Reset the width to auto to maintain aspect ratio */
-  height: auto; /* Reset the height to auto to maintain aspect ratio */
+/* .img1{
+  max-width: 100%; Limit the maximum width of the image to fit within the column
+  max-height: 100%; Limit the maximum height of the image to fit within the column
+  width: auto; Reset the width to auto to maintain aspect ratio
+  height: auto; Reset the height to auto to maintain aspect ratio
 	  
-}
+} */
 
-.card1{
+/* .card1{
 	 padding-left:15%;
    padding-right:10%;
 
@@ -243,13 +313,14 @@ padding-left:40%;
   height: 850px; 
   margin-right: -10px;
   margin-top: -780px;
-}
+  overflow: hidden;
+} */
 
-.column4 {
+/* .column4 {
   float: right;
-  width: 50%;
+  width: 50%; */
  /* padding: 10px;*/
-  height: 850px; 
+  /* height: 850px; 
   margin-top: -780px;
   margin-right: -15px;
 }
@@ -257,11 +328,11 @@ padding-left:40%;
   border-radius:5px;
   padding:15px;
   height:10px;
- }
+ } */
 
 
 /* Clear floats after the columns */
-.row1:after {
+/* .row1:after {
   content: "";
   display:flex;
   clear:both;
@@ -272,39 +343,45 @@ padding-left:40%;
   display:flex;
   clear: both;
    
-}
+} */
 
 
-.column5 {
-  float: left;
-  width: 50%;
+/* .column5 select {
+ 
+  width: 93%;
   height: 850px; 
-  margin-right: -10px;
-}
+  height: 35px;
+  border-radius: 8px;
+  outline: none;
+} */
 
 .column6 {
-  float: right;
-  width: 45%;
-  padding:10px;
- height: 850px; 
- margin-right: 10px;
- margin-top: -50px;
+  /* width: 45%;  */
+ /* margin-right: 10px; */
+ /* margin-top: px; */
 }
-.input3{
+
+/* .column6 .input1 input {
+  padding-left: 10px;
+} */
+/* .input3{
   border-radius:5px;
   padding:15px;
   height:10px;
- }
+ } */
 
+ /* .column5 {
+
+ } */
 
 /* Clear floats after the columns */
-.row2:after {
+/* .row2:after {
   content: "";
   display:flex;
   clear:both;
    
-}
-.row2:before {
+} */
+/* .row2:before {
   content: "";
   display:flex;
   clear: both;
@@ -317,7 +394,7 @@ padding-left:40%;
   padding:15px;
   height:10px;
 
-}
+} */
 
 /* footer */
 footer {

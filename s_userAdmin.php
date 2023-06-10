@@ -56,8 +56,8 @@ $UserID = $_SESSION['uID'];
     </header>
         <br> <br> <br> <br> <br> <br>
 
-  <?php 
-include "connectionRamindu.php";
+        <?php 
+Include_once "connectionRamindu.php";
 $name = $_SESSION['userName'] ?>
   <center>
   <div class = "h31">
@@ -65,25 +65,26 @@ $name = $_SESSION['userName'] ?>
             </div>
             <form  action="s_search1.php" method="POST">
             <div class="search-container">
-            <input class= "input1" type="text" placeholder="Search.." name="search" size="35">
-            <button type="submit"><i class="fa fa-search"><a href="search.php"></a></i></button>
+            <input class= "input1" type="text" id = "mysearch" placeholder="Search.." name="search" size="35"onkeyup="searchUsers()">
+            <button type="submit"><i class="fa fa-search">
            </div>
             </form>
 </center>
 
-<div class="table" border="1" width="100%">
+<div table id = "usertable">
+<div tr class="tableheader">
     <?php
         $sql = "SELECT * FROM users";
         $result = mysqli_query($conn,$sql);
         $queryResult = mysqli_num_rows($result);
 
         if($queryResult > 0){
-            while($row = mysqli_fetch_assoc($result)){
+           
 
                 echo "<table class='table' border='1' width='100%'>
                 <tr>
-                <th>uID:</th>
-                <th>Full Name:</th>
+                <th>uID:</th><br>
+                <th>Full Name:</th><br>
                 <th>User Name:</th><br>
                 <th>Email:</th><br>
                 <th>citizen type:</th><br>
@@ -93,6 +94,7 @@ $name = $_SESSION['userName'] ?>
                 <th>status:</th><br>
                 <th>Account</th><br>
                 </tr>";
+                while($row = mysqli_fetch_assoc($result)){
                     echo" <tr>
         
                             <td>".$row["uID"]." </td>
@@ -107,8 +109,9 @@ $name = $_SESSION['userName'] ?>
                             <td>".$row["account"]." </td>
                              <td>
                                 
-                                <a href='s_profileEdit.php?ID=$row[uID]'> <input class='button' type='submit' name='active' value='Activate' </a> 
-                                <a href='s_deleteProfile.php?ID=$row[uID]'> <input class='button' type='submit' name='deactive' id= 'deactivate' value='Deactivate' onclick='confirmDeactive()'> </a>	
+                                <a href='s_userAdmin.php?ID=$row[uID]'> <input class='button' type='submit' name='active'  id= 'activate' value='Activate'>
+                                 </a> 
+                                <a href='s_userAdmin.php?ID=$row[uID]'> <input class='button' type='submit' name='deactive' id= 'deactivate' value='Deactivate' onclick='confirmDeactive()'> </a>	
                                </td>
                     </tr>";
                 }	
@@ -116,7 +119,6 @@ $name = $_SESSION['userName'] ?>
             }
         ?>
         </div>
-
     <br> <br> <br> <br> <br> <br>
    
    

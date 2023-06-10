@@ -46,7 +46,10 @@ $UserID = $_SESSION['uID'];
                 <li><a href="#">Reserve Tours</a></li>
                 <li><a href="#">Reserve Hotels</a></li>
                 <li class = "sign"><a href ="./s_viewprofile.php">Hi, <?php echo $_SESSION['userName']; ?></a></li>
-                <li class="sign"><a href="./s_RegisterForm.html"><i class="fa-solid fa-user-plus"></i> Logout</a></li>
+                    <li class="sign"><a href ="./s_RegisterForm.php"><i class="fa-solid fa-user-plus"></i> Logout
+                        </button>
+                    </li>
+                          </ul>
 
             </ul>
         </nav>
@@ -61,7 +64,7 @@ $UserID = $_SESSION['uID'];
     </div>
     </center>
 
-    <!-- <?php
+    <?php
         readData();
 	
         function readData(){
@@ -73,31 +76,26 @@ $UserID = $_SESSION['uID'];
 		    $result = $conn->query($sql);
 		
 	        if($result->num_rows > 0){
-                while($row = $result->fetch_assoc()) -->
-		        <!-- {
+                while($row = $result->fetch_assoc())
+		            {
 
-		        echo "<span> -->
-                    <div class="information">
-                        <div class="info">
-                            <div class="info1">
-					            <label>Full Name:  ".$row["fullName"]."  </label><br><br>
+		        echo "<span>
+                    <center>
+                        <table>
+					            <lable>Full Name:  ".$row["fullName"]."  </label><br><br>
 					            <label>user Name:  ".$row["userName"]." </label><br><br>
                                 <label>Email Address:  ".$row["email"]." </label><br><br>
                                 <label>citizen Type:"  .$row["cType"]."  </label><br><br>
                                 <label>Gender:".$row["gender"]."  </label><br><br>
                                 <label>NIC/Passport No:".$row["nicPass"]."  </label><br><br>
                                 <label>contact No:".$row["contactNo"]." </label><br><br>
-                            </div>
-                            <div class="info2">
-					            <a href='s_profileEdit.php?ID=$row[userName]'> <input class='button bttn1' type='submit' name='update' value='Update'> </a> 
-					            <a href='s_deleteProfile.php?ID=$row[userName]'> <input class='button bttn2' type='submit' name='delete' value='Delete' onclick='myFunction()'> </a>	
-                            </div>
-                        </div>
-                        <div class="imageprofile">
-                            <img src="./s_images/profilephoto.jpg" alt="profile" width="350px" height="350px">
-                        </div>
-                    </div>
-			    <!-- </span>";
+                                <a href='s_profileEdit.php?ID=$row[userName]'> <input class='button bttn' type='submit' name='update' value='Update'> </a> 
+                                <a href='s_deleteProfile.php?ID=$row[userName];'>
+          <input class='button bttn' type='submit' name='delete' value='Delete' onclick='return confirmDelete();'>
+        </a>
+                        </table>
+                        </center>
+			    </span>";
 		        }	
             }
 	        else{
@@ -105,7 +103,10 @@ $UserID = $_SESSION['uID'];
 	        }
 	        $conn->close();
 	    } 
-    ?> -->
+    ?> 
+    <div class="imageprofile">
+            <img src="./s_images/profilephoto.jpg" alt="profile" width="350px" height="350px">
+    </div>
 
 </div>
    
@@ -174,7 +175,7 @@ $UserID = $_SESSION['uID'];
                 <div class="content">
                     <form action="">
                         <div class="email">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" placeholder="Your Email" >
                         </div>
                         <div class="btn">
                             <button type="submit">Send</button>

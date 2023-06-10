@@ -154,7 +154,28 @@ header.sticky{
     border-bottom: 1px solid #ffffff1a;
 }
 
-.profile {
+/* profile */
+
+center {
+  text-align:  center;
+  margin: 10rem 25rem auto;
+  background-color: #a7a0a0;
+  width: 50%;
+  color: #282d33;
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px #222222;
+}
+
+.center .button{
+  background-color: #282d33;
+}
+.info {
+  margin-top: 1rem;
+  background-color: #a7a0a0;
+}
+
+
+/* .profile {
   margin-top: 12rem;
   width: 100%;
 }
@@ -189,7 +210,6 @@ header.sticky{
 
 .profile .information .info1 label{
   display: block;
-
    outline: none;
    font-size: 1rem;
    color: #282d33;
@@ -224,13 +244,12 @@ header.sticky{
 
 .profile .information .info2 .bttn2 {
   background-color: #de0c0c;
-}
+} */
 
-.information img {
-  border-radius: 50%;
-  border: 3px solid #e74c3c;
-  box-shadow: 4px 4px 4px #222222;
-  animation: image 1.5s ease-in-out infinite;
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @keyframes image {

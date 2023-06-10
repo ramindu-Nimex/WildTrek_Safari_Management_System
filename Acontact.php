@@ -61,16 +61,16 @@ $query = "INSERT INTO contactus (User_Name, Email, Phone, Message) VALUES ('$nam
             <label for="menu"><i class="fas fa-times"></i></label>
 
             <ul class="menu">
-                <li><a href="#">Home</a></li>
+                <li><a href="./r_main.html">Home</a></li>
                 <li><a href="#">Safari Hotels</a></li>
                 <li class="drop"><a href="#">Safari Tours<i class="fa-solid fa-caret-down"></i></a>
                     <ul class="submenu">
-                        <li><a href="#">Safari Jeep Reservation</a></li>
-                        <li><a href="#">Camping Reservation</a></li>
+                        <li><a href="./r_jeepreservation.html">Safari Jeep Reservation</a></li>
+                        <li><a href="./r_campingreservation.html">Camping Reservation</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Meet our team</a></li>
+                <li><a href="./r_ourteam.html">Meet our team</a></li>
                 <li><a href="#">About Us</a></li>
                 <li class="sign"><a href="#">Login</a></li>
                 <li class="sign"><a href="#"><i class="fa-solid fa-user-plus"></i> Sign Up</a></li>
@@ -291,4 +291,4 @@ $query = "INSERT INTO contactus (User_Name, Email, Phone, Message) VALUES ('$nam
     <script src="./adii.js/Acontact.js"></script>
 </body>
 </html>
-<?php mysqli_close($connection); ?>
+<!-- <?php mysqli_close($connection); ?> -->
