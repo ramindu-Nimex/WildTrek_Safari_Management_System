@@ -1,0 +1,205 @@
+.View_Data_T{
+    
+        position: relative;
+        width:800px;
+        height: 800px;
+        background: transparent;
+        border: 5px solid rgba(236, 183, 103, 0.39);
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 50px 20px 30px rgba(51, 41, 63, 0.363);
+        display:block;
+        justify-content:center;
+        align-items: center;
+        margin-left:auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+        background-color: rgba(135, 173, 112, 0.493);
+    
+    
+}
+.form-style{
+    width: 600px;
+    height: 600px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    position:relative;
+    margin-bottom: 20px;
+
+
+}
+.form-style h1{
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+.form-style h3{
+    font-size: 50px;
+}
+.add_T{
+    background: black;
+	padding: 8px 20px 8px 20px;
+	border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid black;
+	font-size: 20px;
+   
+}
+.view_T{
+    background: black;
+	padding: 8px 20px 8px 20px;
+	border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid black;
+	font-size: 20px;
+
+}
+
+table tr{
+    width: 100%;
+    height: 100%;
+    position:relative;
+    background: transparent;
+    border: 2px solid rgba(236, 183, 103, 0.39);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 50px 20px 30px rgba(51, 41, 63, 0.363);
+    display:block;
+    justify-content:center;
+    align-items: center;
+    margin-left:0px;
+    margin-right: 100px;
+    margin-bottom: 5%;
+    background-color: rgba(121, 78, 15, 0.26);
+    padding-bottom: 20px;
+    
+}
+table td{
+    
+    position:static;
+    padding: 12px 15px;
+    float: inline-start;
+    width: 300px;
+}
+
+.View_Data_T2{
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    
+}
+
+.image1{
+    display: block;
+
+    
+    border-radius: 10px;
+   
+    
+    
+}
+.form-group{
+    display: block;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 50px;
+    height: auto;
+}
+.form-control{
+    display: inline-block;
+    margin-left: 10px;
+    
+    width: 800px;
+    height: 40px;
+    align-items: center;
+}
+.image2{
+    display:block;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    width:450px;
+    height: 300px;
+
+    
+}
+.viewdataContain{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+.viewdataContain li{
+    font-size: 20px;
+}
+.image12{
+    background-color: black;
+    display: block;
+    margin-left: 20px;
+    border-radius: 10px;
+   
+    margin-top: 20px;
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+.addnew_T{
+    background: black;
+	padding: 8px 20px 8px 20px;
+	border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid black;
+	font-size: 20px;
+    left: 50px;
+    bottom: 50px;
+ 
+   
+}
+.edit_T{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.delete_T{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+}
+

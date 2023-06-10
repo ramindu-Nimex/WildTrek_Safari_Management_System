@@ -1,0 +1,204 @@
+/*Reservation Form*/
+.form{
+	max-width: 500px;
+	padding: 10px 20px;
+	margin: 10px auto;
+	margin-top: 50px;
+	background: none;
+	background-color: black;
+    color: white;
+	font-weight: bold;
+	border-style: groove;
+	opacity: 0.4;
+	border-radius: 20px;
+	font-family: 'poppins', sans-serif;
+}
+.form fieldset{
+	border:#1f242d;
+	font-weight: bold;
+}
+.form legend {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+.form label {
+	display: block;
+	margin-bottom: 8px;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="number"],
+.form input[type="datetime-local"],
+.form textarea,
+.form select {
+	font-weight: bold;
+	font-family: 'poppins', sans-serif;
+	background: whitesmoke;
+	border: 1px solid black;
+	border-radius: 4px;
+	font-size: 1.05rem;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	background-color: whitesmoke;
+	color:black;
+	opacity: 1;
+	margin-bottom: 30px;
+    transition: all 0.3s ease-in;
+}
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form input[type="number"]:focus,
+.form input[type="datetime-local"]:focus,
+.form textarea:focus,
+.form select:focus{
+	background: white;
+}
+.form select{
+
+	height:45px;
+}
+.form .number {
+	background: white;
+	color: black;
+	opacity: 0.6;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 #1f242d;
+	border-radius: 15px 15px 15px 0px;
+}
+
+.form input[type="submit"]
+{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #1f242d;
+	margin: 0 auto;
+	background: #ecf0f1;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    box-shadow: 0 0 6px #1f242d;
+	border-radius: 4px;
+}
+.form input[type="submit"]:hover,
+.form input[type="text"]:hover,
+.form input[type="email"]:hover,
+.form input[type="number"]:hover,
+.form input[type="datetime-local"]:hover,
+.form textarea:hover,
+.form select:hover
+{
+	background-color: #1f242d;
+    color: #fff;
+}
+
+
+/*Reservation View*/
+.table {
+    border-collapse: collapse;
+    margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+    font-size: 0.9em;
+	font-weight: bold;
+    min-width: 400px;
+	background: none;
+    color: white;
+	border-style: groove;
+	opacity: 0.7;
+	border-radius: 50px;
+	font-family: 'poppins', sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);	
+}
+
+.table thead tr {
+    background-color: black;
+    color: #ffffff;
+    text-align: left;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #dddddd;
+	background-color: white;
+    color: black;
+	opacity: 0.6;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: black;
+    color: #ffffff;
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid #dddddd;
+}
+
+
+/*View Page buttons*/
+
+.buttonE a {
+	background: white;
+	color: black; 
+	display: block;
+	padding: 10px 24px; 
+	cursor: pointer;
+	box-shadow: 0 0 6px #1f242d;
+	border-radius: 4px; 
+	transition: all 0.3s ease-in;
+}
+
+.buttonE a:hover {
+	background-color: #1f242d;
+	color: white;
+}
+
+.add-new-button a {
+	background: none;
+	background-color: white;
+	color: #1f242d;
+	display: block;
+	cursor: pointer;
+	box-shadow: 0 0 6px #1f242d;
+	border-radius: 4px;
+	position: relative;
+	margin: 20px auto;
+  	width: 150px;
+  	padding: 10px;
+	text-align: center;
+	font-style: normal;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+    outline: none;
+    font-size: 1.05rem;
+    transition: all 0.3s ease-in;
+	border-style: groove;
+	opacity: 0.6;
+}
+
+.add-new-button a:hover{
+	background: none;
+	background-color: #1f242d;
+	color: white;
+	opacity: 0.6;
+}
