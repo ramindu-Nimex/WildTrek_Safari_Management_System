@@ -25,7 +25,7 @@
         <!-- navigation bar-->
         <nav>
             <div class="pic">
-                <img src="./download.png" alt="logo" width="32px" height="32px">
+                <img src="images/logo & footer image/download.png" alt="logo" width="32px" height="32px">
                 <h1 class="logo">WILD<span>TREK</span></h1>
             </div>
 
@@ -193,10 +193,10 @@
                         </span>
                     </div>
                     <div class="latest">
-                        <img src="./5.avif" alt="" width="100px" height="80px">
-                        <img src="./5.jpg" alt="" width="100px" height="80px">
-                        <img src="./6.jpg" alt="" width="100px" height="80px">
-                        <img src="./8.jpg" alt="" width="100px" height="80px">
+                        <img src="images/logo & footer image/5.avif" alt="" width="100px" height="80px">
+                        <img src="images/logo & footer image/5.jpg" alt="" width="100px" height="80px">
+                        <img src="images/logo & footer image/6.jpg" alt="" width="100px" height="80px">
+                        <img src="images/logo & footer image/8.jpg" alt="" width="100px" height="80px">
                     </div>
                 </div>
             </div>
@@ -213,7 +213,7 @@
                         </div>
                     </form>
                     <div class="logo2">
-                    <img src="./download.png" alt="logo" width="32px" height="32px">
+                    <img src="images/logo & footer image/download.png" alt="logo" width="32px" height="32px">
                     <h1>WILD<span>TREK</span></h1>
                     </div>
 
