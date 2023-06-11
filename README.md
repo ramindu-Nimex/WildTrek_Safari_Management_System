@@ -1,5 +1,9 @@
 # WildTrek_Safari_Management_System
-#1st Year 2nd Semester IWT Project
+1st Year 2nd Semester IWT Project
+
+our Team Members 
+
+1.Gamage S S J (Team Leader) https://github.com/IT22607232Samidisjg
 
 This is WildTrek website home page. 
 used Technologies :
