@@ -37,12 +37,12 @@ $UserID = $_SESSION['uID'];
               <li><a href="#">Safari Hotels</a></li>
               <li class="drop"><a href="#">Safari Tours<i class="fa-solid fa-caret-down"></i></a>
                   <ul class="submenu">
-                      <li><a href="./jeepreservation.php" target="_blank">Safari Jeep Reservation</a></li>
-                      <li><a href="./campingreservation.php" target="_blank">Camping Reservation</a></li>
+                      <li><a href="./r_jeepreservation.php" target="_blank">Safari Jeep Reservation</a></li>
+                      <li><a href="./r_campingreservation.php" target="_blank">Camping Reservation</a></li>
                   </ul>
               </li>
               <li><a href="#">Contact Us</a></li>
-              <li><a href="./ourteam.php" target="_blank">Meet our team</a></li>
+              <li><a href="./r_ourteam.php" target="_blank">Meet our team</a></li>
               <li><a href="#">About Us</a></li>
               <!-- <?php echo $_SESSION['userName']; ?> -->
               <li class="sign"><a href="./s_viewprofile.php">Hi user</a></li>

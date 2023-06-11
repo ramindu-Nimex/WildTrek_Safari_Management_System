@@ -65,7 +65,7 @@
       <div class="text">
          <div class="about">
             <img src="images/Our team/pradicksha.jpg" alt="pradiksha" width="700px" height="800px">
-            <h3>Pradiksha <P></P></h3>
+            <h3>Pradiksha P</h3>
             <h4>IT22603418</h4>
          </div>
       </div>
