@@ -1,8 +1,8 @@
-<!-- <?php
-include "connectionRamindu.php";;
-session_start();
-$UserID = $_SESSION['uID'];
-?> -->
+<?php
+    include "connectionRamindu.php";
+    session_start();
+    $UserID = $_SESSION['uID'];
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,21 +10,21 @@ $UserID = $_SESSION['uID'];
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Slider</title>
-   <link rel="stylesheet" href="s_css/main.css">
+   <title>Our Team</title>
+   <link rel="stylesheet" href="styles/r_ourteam.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href = "s_css/s_homepage2.css">
 </head>
 <body>
-    <!-- header -->
-    <header>
+
+   <!-- header -->
+   <header>
       <p>WildTrek - Best Under Sri Lankan Sky</p>
       <!-- navigation bar-->
       <nav>
           <div class="pic">
-              <img src="s_images/download.png" alt="logo" width="32px" height="32px">
+              <img src="images/logo & footer image/download.png" alt="logo" width="32px" height="32px">
               <h1 class="logo">WILD<span>TREK</span></h1>
           </div>
 
@@ -33,79 +33,71 @@ $UserID = $_SESSION['uID'];
           <label for="menu"><i class="fas fa-times"></i></label>
 
           <ul class="menu">
-              <li><a href="./r_main.php">Home</a></li>
+              <li><a href="./r_main.php" target="_blank">Home</a></li>
               <li><a href="#">Safari Hotels</a></li>
               <li class="drop"><a href="#">Safari Tours<i class="fa-solid fa-caret-down"></i></a>
                   <ul class="submenu">
-                      <li><a href="./jeepreservation.php" target="_blank">Safari Jeep Reservation</a></li>
-                      <li><a href="./campingreservation.php" target="_blank">Camping Reservation</a></li>
+                      <li><a href="./r_jeepreservation.php" target="_blank">Safari Jeep Reservation</a></li>
+                      <li><a href="./r_campingreservation.php" target="_blank">Camping Reservation</a></li>
                   </ul>
               </li>
               <li><a href="#">Contact Us</a></li>
-              <li><a href="./ourteam.php" target="_blank">Meet our team</a></li>
+              <li><a href="./r_ourteam.php" target="_blank">Meet our team</a></li>
               <li><a href="#">About Us</a></li>
-              <!-- <?php echo $_SESSION['userName']; ?> -->
-              <li class="sign"><a href="./s_viewprofile.php">Hi user</a></li>
-              <li class="sign"><a href="./s_RegisterForm.html"><i class="fa-solid fa-user-plus"></i> Logout</a></li>
+              <li class="sign"><a href="#">Hi, <?php echo $_SESSION['userName']; ?> <i class="fa-solid fa-user"></i></a></li>
           </ul>
       </nav>
   </header>
 
-  <!-- button -->
-  <div class="button">
-      <h1>Seek your amazing journey!!</h1>
-      <div class="button1">
-         <a href="./s_viewprofile.php">User Profile</a>
-         <a href="./s_viewprofile.php">Visit FAQ</a>
+  <!-- team -->
+  <div class="teamtopic">
+  <h1>Team WildTrek</h1>
+   </div>
+   <div class="team">
+      <div class="text">
+         <div class="about">
+            <img src="images/Our team/Thewan.jpg" alt="thewan" width="700px" height="800px">
+            <h3>Damnidu T W T</h3>
+            <h4>IT22602978</h4>
+         </div>
+      </div>
+
+      <div class="text">
+         <div class="about">
+            <img src="images/Our team/pradicksha.jpg" alt="pradiksha" width="700px" height="800px">
+            <h3>Pradiksha <P></P></h3>
+            <h4>IT22603418</h4>
+         </div>
+      </div>
+
+      <div class="text">
+         <div class="about">
+            <img src="images/Our team/Samidi.jpg" alt="Samidi" width="700px" height="800px">
+            <h3>Gamage S S J</h3>
+            <h4>IT22607232</h4>
+         </div>
+      </div>
+
+      <div class="text">
+         <div class="about">
+            <img src="images/Our team/Adithya.jpg" alt="Adithya" width="700px" height="800px">
+            <h3>Jeewandara O C A</h3>
+            <h4>IT22607300</h4>
+         </div>
+      </div>
+
+      <div class="text">
+         <div class="about">
+            <img src="images/Our team/ramidu.jpg" alt="ramindu" width="700px" height="800px">
+            <h3>Nimes R H R</h3>
+            <h4>IT22577160</h4>
+         </div>
       </div>
    </div>
 
-  <!-- Slider -->
-  <div class="slider">
-   <figure>
-       <!--One Side-->
-       <div class="slide">
-           <p>Enjoy your holiday with amazing promos!!.</p>
-           <img src="s_images/image22.jpg" alt="slide1" width="725px" height="482px">
-       </div>
-       <div class="slide">
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-           <img src="s_images/image2.jpg" alt="slide2" width="725px" height="482px">
-       </div>
-       <div class="slide">
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-           <img src="s_images/image3.jpg" alt="slide3" width="725px" height="482px">
-       </div>
-       <div class="slide">
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-           <img src="s_images/image4.jpg" alt="slide4">
-       </div>
-       <div class="slide">
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-           <img src="s_images/image5.jpg" alt="slide5" width="725px" height="482px">
-       </div>
-       <div class="slide">
-         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-         <img src="s_images/image6.jpg" alt="slide6" width="725px" height="482px">
-     </div>
-     <div class="slide">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, eaque.</p>
-         <img src="s_images/image7.jpg" alt="slide7" width="725px" height="482px">
-     </div>
-     <div class="slide">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum dolorum nemo.</p>
-         <img src="s_images/image8.jpg" alt="slide8" width="725px" height="482px">
-     </div>
-     <div class="slide">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente accusantium.</p>
-         <img src="s_images/image9.jpg" alt="slide9" width="725px" height="482px">
-     </div>
-     <div class="slide">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-         <img src="s_images/image23.webp" alt="slide10" width="725px" height="482px">
-     </div>
-   </figure>
-   </div>
+   <div class="teamfooter">
+      <img src="images/Our team/team.jpg" alt="team footer">
+  </div>
 
    <!--Footer-->
    <footer>
@@ -158,10 +150,10 @@ $UserID = $_SESSION['uID'];
                       </span>
                   </div>
                   <div class="latest">
-                      <img src="s_images/5.avif" alt="" width="100px" height="80px">
-                      <img src="s_images/5.jpg" alt="" width="100px" height="80px">
-                      <img src="s_images/6.jpg" alt="" width="100px" height="80px">
-                      <img src="s_images/8.jpg" alt="" width="100px" height="80px">
+                      <img src="images/logo & footer image/5.avif" alt="" width="100px" height="80px">
+                      <img src="images/logo & footer image/5.jpg" alt="" width="100px" height="80px">
+                      <img src="images/logo & footer image/6.jpg" alt="" width="100px" height="80px">
+                      <img src="images/logo & footer image/8.jpg" alt="" width="100px" height="80px">
                   </div>
               </div>
           </div>
@@ -178,7 +170,7 @@ $UserID = $_SESSION['uID'];
                       </div>
                   </form>
                   <div class="logo2">
-                  <img src="s_images/download.png" alt="logo" width="32px" height="32px">
+                  <img src="images/logo & footer image/download.png" alt="logo" width="32px" height="32px">
                   <h1>WILD<span>TREK</span></h1>
                   </div>
 
@@ -203,9 +195,8 @@ $UserID = $_SESSION['uID'];
               </span>
           </div>
       </div>
-
   </footer>
 
-  <script src="js/r_main.js"></script>
+  <script src="Js/r_main.js"></script>
 </body>
 </html>

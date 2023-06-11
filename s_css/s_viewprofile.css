@@ -166,15 +166,24 @@ center {
   box-shadow: 4px 4px 4px #222222;
 }
 
-.center .button{
+.center input{
   background-color: #282d33;
+  color: #a7a0a0;
+  padding: 10px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all .45s ease;
+  box-shadow: 2px 2px 2px #222222;
 }
 .info {
   margin-top: 1rem;
   background-color: #a7a0a0;
 }
 
-
+img {
+  float: left;
+}
 /* .profile {
   margin-top: 12rem;
   width: 100%;
