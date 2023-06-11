@@ -1,6 +1,6 @@
 # WildTrek_Safari_Management_System
 
-This is Our Personal website home page. 
+This is WildTrek website home page. 
 used Technologies :
 
 * HTML5
@@ -10,3 +10,7 @@ used Technologies :
 * mySQL
 
 ![CHEESE!](wildtrek1.png)
+![CHEESE!](wildtrek2.png)
+![CHEESE!](wildtrek3.png)
+![CHEESE!](wildtrek4.png)
+![CHEESE!](wildtrek5.png)
