@@ -57,7 +57,7 @@
                 <input type="text" placeholder="search data" name="search">
                 <button name="submit">Search</button>
             </form>
-            <a href="./campingForm.html">Add</a>
+            <a href="./jeepForm.php">Add</a>
          </div>
       </div>
       <table border="1">
