@@ -45,7 +45,7 @@ $UserID = $_SESSION['uID'];
               <li><a href="./r_ourteam.php" target="_blank">Meet our team</a></li>
               <li><a href="#">About Us</a></li>
               <!-- <?php echo $_SESSION['userName']; ?> -->
-              <li class="sign"><a href="./s_viewprofile.php">Hi user</a></li>
+              <li class="sign"><a href="./s_viewprofile.php">Hi, <?php echo $_SESSION['userName']; ?> <i class="fa-solid fa-user"></i></a></li>
               <li class="sign"><a href="./s_RegisterForm.html"><i class="fa-solid fa-user-plus"></i> Logout</a></li>
           </ul>
       </nav>

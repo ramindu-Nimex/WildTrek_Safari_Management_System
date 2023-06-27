@@ -98,7 +98,7 @@
                         <td>
                            <a href="moredetailscamp.php?id=<?php echo $row["id"]; ?>" target="_blank" class="read">Read More</a>
                            <a href="updateCampdetails.php?id=<?php echo $row["id"]; ?>" target="_blank" class="update">Update</a>
-                           <a href="deletecamp.php?id=<?php echo $row["id"]; ?>" target="_blank" class="delete">Delete</a>
+                           <a href="deletecamp.php?id=<?php echo $row["id"]; ?>" target="_blank" class="delete" onclick="return confirmDelete();">Delete</a>
                         </td>
                      </tr>
                   <?php
@@ -207,5 +207,14 @@
 
     </footer>
     <script src="./raminduform.js"></script>
+    
+    <script>
+          function confirmDelete() {
+            var text = confirm("Do you want to delete");
+            if(!text) {
+                return false;
+            }
+        }
+    </script>
 </body>
 </html>

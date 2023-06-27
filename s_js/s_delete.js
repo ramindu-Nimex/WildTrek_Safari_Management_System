@@ -3,5 +3,5 @@ function confirmDelete() {
     if(!txt) {
       return false;
     }
-  }
+}
   

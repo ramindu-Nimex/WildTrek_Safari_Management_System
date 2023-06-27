@@ -12,3 +12,10 @@ function enableButton() {
        document.getElementById("submitBtn").disabled=true;
    }
 }
+
+function confirmDelete() {
+    var text = confirm("Do you want to delete");
+    if(!text) {
+        return false;
+    }
+}
