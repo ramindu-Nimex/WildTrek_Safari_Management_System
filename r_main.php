@@ -27,7 +27,7 @@
                 <h1 class="logo">WILD<span>TREK</span></h1>
             </div>
 
-            <input type="checkbox" name="" id="menu">
+            <input type="checkbox" name="" id="menu"> 
             <label for="menu"><i class="fas fa-bars"></i></label>
             <label for="menu"><i class="fas fa-times"></i></label>
 
